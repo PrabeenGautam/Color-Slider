@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Slider</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <section class="color-slider">
+      <div class="input">
+        <div class="input-param">
+          <label for="red">R</label>
+          <input id="red" type="range" min="0" max="255" />
+          <input type="number" min="0" max="255" value="34" />
+        </div>
+
+        <div class="input-param">
+          <label for="green">G</label>
+          <input id="green" type="range" min="0" max="255" />
+          <input type="number" min="0" max="255" value="34" />
+        </div>
+
+        <div class="input-param">
+          <label for="blue">B</label>
+          <input id="blue" type="range" min="0" max="255" />
+          <input type="number" min="0" max="255" value="34" />
+        </div>
+
+        <div class="input-param">
+          <label for="alpha">A</label>
+          <input id="alpha" step="0.1" type="range" min="0" max="1" />
+          <input type="number" min="0" max="1" step="0.1" value="1" />
+        </div>
+      </div>
+
+      <div class="color-details">
+        <div class="rgb">
+          <span class="label">RGBA:&nbsp;</span>
+          (<span id="rgb-value">255, 255, 255, 0.4</span>)
+        </div>
+
+        <div class="hex">
+          <span class="label">HEX:&nbsp;</span>
+          <span id="hex-value">#124536</span>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
