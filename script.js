@@ -30,12 +30,13 @@ function rgbToHex(r, g, b, a) {
   b = b.toString(16);
   a = Math.round(a * 255).toString(16);
 
-  if (r.length == 1) r = "0" + r;
-  if (g.length == 1) g = "0" + g;
-  if (b.length == 1) b = "0" + b;
-  if (a.length == 1) a = "0" + a;
-
-  return "#" + r + g + b + a;
+  return (
+    "#" +
+    r.padStart(2, 0) +
+    g.padStart(2, 0) +
+    b.padStart(2, 0) +
+    a.padStart(2, 0)
+  );
 }
 
 sliderInput.forEach((slider, index) => {

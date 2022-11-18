@@ -16,7 +16,7 @@ body {
 }
 
 .color-slider {
-  background-color: #333;
+  background-color: #24232b;
   padding: 2rem;
   border-radius: 10px;
   width: 28rem;
@@ -38,6 +38,7 @@ body {
 
 input[type="range"] {
   width: 12rem;
+  accent-color: #e3e2e9;
 }
 
 input[type="number"] {
@@ -56,7 +57,7 @@ input[type="number"] {
 }
 
 .color-details {
-  background-color: #18c85c;
+  background-color: #a4ffaf;
   padding: 15px;
   border-radius: 5px;
   color: rgba(0, 0, 0, 0.7);
